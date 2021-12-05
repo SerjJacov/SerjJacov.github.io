@@ -5,17 +5,20 @@
         <title>Борис Шевцов - веб-разработчик</title>
     </head>
     <body>
+       
+        <!-- Главная страница-->
+        
         <header>
         <nav>
             <div class="logo">Борис Шевцов</div>
             <div class="menu">
             <ul>
-                <li><a href="about.html">Обо мне</a></li>
-                <li><a href="services.html">Услуги</a></li>
-                <li><a href="case.html">Кейсы</a></li>
-                <li><a href="#">Прайс</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#case">Кейсы</a></li>
+                <li><a href="#cost">Прайс</a></li>
+                <li><a href="#stat">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
             </div>
         </nav>
@@ -27,9 +30,232 @@
             <input type="submit" value="Обо мне">
             <input type="submit" value="Мои работы">
             </div>
-            
         </div>
-    
-    
+       
+        <!-- Обо мне-->
+        
+    <section id="about">
+        <div class="about">
+            <img src="img/anon.jpg" alt="Мое фото" title="Photo">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+            facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+        </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+        facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+    </p>
+            <button type="button">Скачать резюме</button>
+        </div>
+    </section>
+       
+        <!-- Что я умею-->
+        
+    <section id="services">
+          <h1>Что я умею</h1>
+        <ul>
+        <li>
+            <div>
+            <img src="img/icon/web.png" alt="icon web"><br>
+                <span>Веб-дизайн</span>
+                <p>Lorem ipsum dolor sit amet placerat
+facilisis felis mi in tempus eleifend
+pellentesque natoque etiam.</p>
+            </div>
+        </li>
+         <li>
+            <div>
+            <img src="img/icon/dev.png" alt="icon dev"><br>
+                <span>Разработка</span>
+                <p>Lorem ipsum dolor sit amet placerat
+facilisis felis mi in tempus eleifend
+pellentesque natoque etiam.</p>
+            </div>
+        </li>
+        <li>
+            <div>
+            <img src="img/icon/ceo.png" alt="icon CEO"><br>
+                <span>CEO-Оптимизация</span>
+                <p>Lorem ipsum dolor sit amet placerat
+facilisis felis mi in tempus eleifend
+pellentesque natoque etiam.</p>
+            </div>
+        </li>
+            <li>
+            <div>
+            <img src="img/icon/mark.png" alt="icon marketing"><br>
+                <span>Маркетинг</span>
+                <p>Lorem ipsum dolor sit amet placerat
+facilisis felis mi in tempus eleifend
+pellentesque natoque etiam.</p>
+            </div>
+        </li>
+            
+        </ul>
+</section>
+        
+        <!-- Кейсы-->
+        
+        <section id="case">
+         <h1>Кейсы</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+        <img src="img/site.png" alt="opencloud">
+        <div class="clients">
+            <span>Client:</span><br>
+            <p>Какая-то компания</p>
+        <span>Website:</span><br>
+            <p><a href="https://www.aaaaa.com">https://www.aaaaa.com</a></p>
+        </div>
+        <div class="project">
+            <span>Название проекта</span><br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <a href="#"> Visit live site</a>
+        </div>
+        </section>
+        
+        <!-- Расчет стоимости -->
+    <section id="cost">
+        <h2>Расчет стоимости</h2>
+            <div class="calc">
+            <h3>Тип сайта</h3>
+            <form action="#">
+            <input type="text" name="text_input" placeholder="Выберите пункт...">
+            </form>
+            <h3>Дизайн</h3>
+            <form action="#">
+            <input type="text" name="text_input" placeholder="Выберите пункт...">
+            </form>
+            <h3>Адаптивность</h3>
+            <form action="#">
+            <input type="text" name="text_input" placeholder="Выберите пункт...">
+            </form>
+            <p>Сроки</p>
+            <form action="#">
+            <input type="number" name="text_input">
+            </form>
+            <p>Стоимость</p>
+            <form action="#">
+            <input type="number" name="text_input">
+            </form>
+            </div>             
+        </section>
+        
+        <!-- Немного статистики -->
+        
+        <section id="stat">
+            
+            <!-- Статистика -->
+            <div class="stat">
+        <h2>Немного статистики</h2><hr>
+                
+                <ul>
+                    <li>
+                        <img src="img/icon/smile.png"><br>
+                        <p><span>120</span><br>
+                        Счастливых клиентов
+                        </p>
+                    </li>
+                <li>
+                        <img src="img/icon/tag.png"><br>
+                        <p><span>4,600</span><br>
+                        Часов работы
+                        </p>
+                    </li>
+                <li>
+                        <img src="img/icon/v.png"><br>
+                        <p><span>340</span><br>
+                        Проектов завершено
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/icon/cub.png"><br>
+                        <p><span>23</span><br>
+                        Наград получено
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Отзывы -->
+            
+            <div class="reviews">
+            <h2>Отзывы</h2><hr>
+                <img src="img/rew.jpg" width="100" height="90"><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+                <p><span>Роуэн</span>, Актер.</p>
+            </div>
+        </section>
+        
+        <!--  Контакты -->
+        
+        <section id="contacts">
+            <div class="contacts">
+            <h2>Мои контакты</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
+                <ul>
+                    <li>
+                        <img src="img/icon/reo.png"><br>
+                    Simferopol, 42, Kirova str</li>
+                    <li>
+                    <a href="mailto:info@company.com"><img src="img/icon/mail.png"></a><br>info@company.com</li>
+                    <li>
+                         <a href="tel:+79780000000"><img src="img/icon/phone.png"></a><br>+79780000000
+                    </li>
+                </ul>
+                
+                <h2>Оставьте мне сообщение</h2>
+                <form action="#">
+                <input class="name" type="text" placeholder="Имя">
+                </form>
+             <form action="#">
+                <input class="email" type="text" placeholder="Email">
+                </form>
+                 <form action="#">
+                <input class="message" type="text" placeholder="Сообщение">
+                </form>
+                <form action="#">
+                <button> Отправить </button>
+                </form>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/"><img src="img/icon/social/fb.png"></a>
+                    </li>
+                    
+                    <li>
+                    <a href="https://twitter.com/"><img src="img/icon/social/tw.png"></a>
+                    </li>
+                    <li>
+                     <a href="https://dribbble.com/"><img src="img/icon/social/circle.png"></a>
+                    </li>
+                    <li>
+                    <a href="https://github.com/"><img src="img/icon/social/git.png"></a>
+                    </li>
+                    <li>
+                     <a href="https://www.instagram.com/"><img src="img/icon/social/insta.png"></a>
+                    </li>
+                    <li>
+                    <a href="https://ru.linkedin.com/"><img src="img/icon/social/in.png"></a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Карта -->
+        <div class="map">
+            <img src="img/map.PNG" alt="карта компании" width="1920" height="365">
+            
+            </div>
+        </section>
+        
+        <footer>
+        <p>Copyright © 2021. Design by Web</p>
+        </footer>
     </body>
 </html>
