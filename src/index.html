@@ -3,10 +3,28 @@
     <head>
     <meta charset="utf-8">
         <title>Борис Шевцов - веб-разработчик</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-       
-        <!-- Главная страница-->
+        
+<!-- Загрузчик-->        
+  <div class="load">  
+      <div class="circle"></div>
+  <div class="loader">
+      <span>l</span>
+      <span>o</span>
+      <span>a</span>
+      <span>d</span>
+      <span>i</span>
+      <span>n</span>
+      <span>g</span>
+      <span>.</span>
+      <span>.</span>
+      <span>.</span>
+        </div>    
+   </div>     
+<!-- Главная страница-->
         
         <header>
         <nav>
@@ -23,207 +41,247 @@
             </div>
         </nav>
         </header>
-        <div class="main">
+        <section class="main">
         <div class="title_container">
-            <h1>Привет<br> Я Борис Шевцов</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <h1>Привет <br> Я Борис Шевцов</h1>
+            <h4>Фулл стек веб-разработчик и Android-разработчик</h4>
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
             </div>
-        </div>
+        </section>
        
-        <!-- Обо мне-->
+<!-- Обо мне-->
         
     <section id="about">
         <div class="about">
-            <img src="img/anon.jpg" alt="Мое фото" title="Photo">
-        <p>
+            <h2>Обо мне</h2> 
+           <hr>
+            <img src="img/rew.png" alt="Мое фото" title="Photo">
+        <p class="one">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
             facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
         </p>
-
-    <p>
+            
+    <p class="two">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
         facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
     </p>
-            <button type="button">Скачать резюме</button>
-        </div>
+            
+            <input type="button" value="Скачать резюме">
+           </div> 
+        
     </section>
        
-        <!-- Что я умею-->
+<!-- Что я умею-->
         
     <section id="services">
-          <h1>Что я умею</h1>
-        <ul>
-        <li>
-            <div>
+          <h2>Что я умею</h2>
+        <hr>
+        <div class="services">
+       
+            <div class="chapter">
             <img src="img/icon/web.png" alt="icon web"><br>
                 <span>Веб-дизайн</span>
                 <p>Lorem ipsum dolor sit amet placerat
 facilisis felis mi in tempus eleifend
 pellentesque natoque etiam.</p>
             </div>
-        </li>
-         <li>
-            <div>
+        
+            <div class="chapter">
             <img src="img/icon/dev.png" alt="icon dev"><br>
                 <span>Разработка</span>
                 <p>Lorem ipsum dolor sit amet placerat
 facilisis felis mi in tempus eleifend
 pellentesque natoque etiam.</p>
             </div>
-        </li>
-        <li>
-            <div>
+       
+            <div class="chapter">
             <img src="img/icon/ceo.png" alt="icon CEO"><br>
                 <span>CEO-Оптимизация</span>
                 <p>Lorem ipsum dolor sit amet placerat
 facilisis felis mi in tempus eleifend
 pellentesque natoque etiam.</p>
             </div>
-        </li>
-            <li>
-            <div>
+      
+            <div class="chapter">
             <img src="img/icon/mark.png" alt="icon marketing"><br>
                 <span>Маркетинг</span>
                 <p>Lorem ipsum dolor sit amet placerat
 facilisis felis mi in tempus eleifend
 pellentesque natoque etiam.</p>
             </div>
-        </li>
-            
-        </ul>
+         </div>
 </section>
         
-        <!-- Кейсы-->
+<!-- Кейсы-->
+        
+        
         
         <section id="case">
-         <h1>Кейсы</h1>
+        <div class="case_head">
+         <h2>Кейсы</h2>
+        <hr>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
-        <img src="img/site.png" alt="opencloud">
-        <div class="clients">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.
+        </p>
+            </div>
+            
+            <div class="case_bg">
+        <!-- <img src="img/site.png" alt="opencloud" width="1558" height="831"> -->
+            </div>
+        <div class="case_footer">
+        
+            <div class="clients">
             <span>Client:</span><br>
             <p>Какая-то компания</p>
         <span>Website:</span><br>
-            <p><a href="https://www.aaaaa.com">https://www.aaaaa.com</a></p>
+            <p><a href="#">https://www.aaaaa.com</a></p>
         </div>
+       
         <div class="project">
             <span>Название проекта</span><br>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-            <a href="#"> Visit live site</a>
         </div>
+        </div>
+            <br>
+        
+            <input type="submit" value="Visit live site"> 
+                 
         </section>
         
-        <!-- Расчет стоимости -->
-    <section id="cost">
+        
+        
+        
+        
+<!-- Расчет стоимости -->
+        <section id="cost">
+            <div class="cost_main">
         <h2>Расчет стоимости</h2>
             <div class="calc">
-            <h3>Тип сайта</h3>
             <form action="#">
-            <input type="text" name="text_input" placeholder="Выберите пункт...">
-            </form>
+                <h3>Тип сайта</h3>
+                
+                <select>
+                    <option value="#">Выберите пункт...</option>
+                    <option value="#">Выберите пункт...</option>
+                    <option value="#">Выберите пункт...</option>
+                </select>
+         
             <h3>Дизайн</h3>
-            <form action="#">
-            <input type="text" name="text_input" placeholder="Выберите пункт...">
-            </form>
+           
+            <select>
+                    <option value="#">Выберите пункт...</option>
+                    <option value="#">Выберите пункт...</option>
+                    <option value="#">Выберите пункт...</option>
+             </select>
+           
             <h3>Адаптивность</h3>
-            <form action="#">
-            <input type="text" name="text_input" placeholder="Выберите пункт...">
-            </form>
+            
+            <select>
+                    <option value="#">Выберите пункт...</option>
+                    <option value="#">Выберите пункт...</option>
+                    <option value="#">Выберите пункт...</option>
+            </select>
+            
             <p>Сроки</p>
-            <form action="#">
+          
             <input type="number" name="text_input">
-            </form>
+          
             <p>Стоимость</p>
-            <form action="#">
+        
             <input type="number" name="text_input">
             </form>
-            </div>             
+            </div> 
+                </div>
         </section>
         
-        <!-- Немного статистики -->
+<!-- Немного статистики -->
         
         <section id="stat">
             
-            <!-- Статистика -->
+ <!-- Статистика -->
             <div class="stat">
-        <h2>Немного статистики</h2><hr>
-                
-                <ul>
-                    <li>
-                        <img src="img/icon/smile.png"><br>
+        <h2>Немного статистики</h2>
+                <hr>
+                <div class="stat_points">
+                      <div class="points">
+                        <img src="img/icon/smile.png" alt="Значок смайл"><br>
                         <p><span>120</span><br>
                         Счастливых клиентов
                         </p>
-                    </li>
-                <li>
-                        <img src="img/icon/tag.png"><br>
+                    </div>
+                    <div class="points">
+                        <img src="img/icon/tag.png" alt="Значок скобок"><br>
                         <p><span>4,600</span><br>
                         Часов работы
                         </p>
-                    </li>
-                <li>
-                        <img src="img/icon/v.png"><br>
+                    </div>
+                <div class="points">
+                        <img src="img/icon/v.png" alt="Значок V"><br>
                         <p><span>340</span><br>
                         Проектов завершено
                         </p>
-                    </li>
-                    <li>
-                        <img src="img/icon/cub.png"><br>
+                    </div>
+                    <div class="points">
+                        <img src="img/icon/cub.png" alt="Значок Кубок"><br>
                         <p><span>23</span><br>
                         Наград получено
                         </p>
-                    </li>
-                </ul>
-            </div>
-            
+                    </div>
+                </div>
+                  </div>      
             <!-- Отзывы -->
             
             <div class="reviews">
             <h2>Отзывы</h2><hr>
-                <img src="img/rew.jpg" width="100" height="90"><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
-                <p><span>Роуэн</span>, Актер.</p>
-            </div>
+                <img src="img/rev.jpg" width="100" height="90"><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante <br>
+                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+                <p class="sign"><span>Михаил</span>, Ген. директор ПАО &#8220;ГазПром&#8221;.</p>
+                <div class="dotted"> <img src="img/icon/points.png"></div>
+                </div>
+            
         </section>
         
-        <!--  Контакты -->
+<!--  Контакты -->
         
         <section id="contacts">
             <div class="contacts">
             <h2>Мои контакты</h2>
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
-                <ul>
-                    <li>
+                <div class="adres">
+                    <div>
                         <img src="img/icon/reo.png"><br>
-                    Simferopol, 42, Kirova str</li>
-                    <li>
-                    <a href="mailto:info@company.com"><img src="img/icon/mail.png"></a><br>info@company.com</li>
-                    <li>
+                    Simferopol, 42, Kirova str</div>
+                    <div>
+                    <a href="mailto:info@company.com"><img src="img/icon/mail.png"></a><br>info@company.com</div>
+                    <div>
                          <a href="tel:+79780000000"><img src="img/icon/phone.png"></a><br>+79780000000
-                    </li>
-                </ul>
-                
+                    </div>
+                </div>
+            </div>
+<!--  Форма отправки сообщения -->
+            <div class="messages">
                 <h2>Оставьте мне сообщение</h2>
                 <form action="#">
                 <input class="name" type="text" placeholder="Имя">
-                </form>
-             <form action="#">
+                
+            
                 <input class="email" type="text" placeholder="Email">
+               
+                <br>
+                <textarea class="massage" placeholder="Сообщение"></textarea> 
+                    
+                <br>
+               
+                <button> Отправить</button>
                 </form>
-                 <form action="#">
-                <input class="message" type="text" placeholder="Сообщение">
-                </form>
-                <form action="#">
-                <button> Отправить </button>
-                </form>
+                <div class="socweb">
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/"><img src="img/icon/social/fb.png"></a>
@@ -245,9 +303,11 @@ facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
                     <a href="https://ru.linkedin.com/"><img src="img/icon/social/in.png"></a>
                     </li>
                 </ul>
+                    </div>
             </div>
-            
+            </section>
             <!-- Карта -->
+            <section id="map">
         <div class="map">
             <img src="img/map.PNG" alt="карта компании" width="1920" height="365">
             

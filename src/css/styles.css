@@ -1,0 +1,618 @@
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Загрузчик */
+.load{
+    width: 1920px;
+    height: 860px;
+    position: relative;
+    
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 360px;
+    left: 915px;
+    border: 10px solid rgba(112,112,112,0.5);
+    border-top: 10px solid black;
+    border-radius: 50%;
+    animation: circlanim 2s  infinite;
+}
+@keyframes circlanim{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+.loader{
+    position: relative;
+    top: 420px;
+    left: 810px;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgba(112,112,112,0.5);
+    
+}
+.loader span{
+    animation: loadanim 5s infinite;
+    opacity: 0;
+}
+@keyframes loadanim{
+    from{opacity: 0; }
+    to{opacity: 1; }
+}
+
+.loader span:nth-child(1){animation-delay: 1s;}
+.loader span:nth-child(2){animation-delay: 1.5s;}
+.loader span:nth-child(3){animation-delay: 2s;}
+.loader span:nth-child(4){animation-delay: 2.5s;}
+.loader span:nth-child(5){animation-delay: 3s;}
+.loader span:nth-child(6){animation-delay: 3.5s;}
+.loader span:nth-child(7){animation-delay: 4s;}
+.loader span:nth-child(8){animation-delay: 4.5s;}
+.loader span:nth-child(9){animation-delay: 5s;}
+.loader span:nth-child(10){animation-delay: 5.5s;}
+/* Меню */
+
+nav{
+    width: 1920px;
+    height: 61px;
+    background-color: #2a3d50;
+    position: ;
+}
+.logo{
+    color: rgb(255,255,255);
+    font-size: 24px;
+    line-height: 61px;
+    margin-left: 389px;
+    float: left;
+    animation: comming 3s ease;
+}
+.menu{
+    float: left;
+    margin-left: 432px;
+    
+}
+.menu li{
+    float: left;
+    line-height: 61px;
+     margin-left: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    animation: topshift 0.4s ease forwards;
+    transition: all 0.2s;
+    opacity: 0;
+    
+}
+
+.menu a{
+    color: rgb(255,255,255);
+    display: inline-block;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+/* анимация меню */
+.menu a:hover{
+    color: #c97a47;
+   
+}
+
+.menu li:active{
+    transform: scale(1.3);
+}
+/* Главная */
+
+
+.main{
+    width: 1920px;
+    height: 100%;
+    background: url(../img/rew.png) no-repeat 90% 100%/auto 85%,url(../img/backgr.jpg) center/cover no-repeat;
+}
+.title_container{
+    float: left;
+    margin: 436px 0 0 400px;
+    text-align: center;
+    animation: titlemove 1s ease forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+.title_container h1{
+    font-size: 79px;
+    font-weight: bold;
+    color: rgb(44,56,74);
+    
+}
+.title_container h4{
+    font-size: 20px;
+    color: rgb(121,129,141);
+    margin-top: 29px;
+}
+.title_container input{
+    height: 42px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(121,129,141);
+    border: 1px solid rgb(121,129,141);
+    border-radius: 10px;
+    padding: 0 15px;
+    margin: 55px 14px 0 14px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+/* анимация кнопок */
+.title_container input:hover{
+    background: #2a3d50;
+    color: #fff;
+}
+.title_container input:active{
+    transform: scale(1.1);
+}
+/* появление логотипа */
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* появление меню */
+@keyframes topshift{
+    from{opacity: 0; margin-top: -80px;}
+    to{opacity: 1; margin-top: 0px;}
+}
+   /* появление меню - задержка пунктов по 0,4 сек*/
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
+/* анимация главного блока */
+@keyframes titlemove{
+    from{opacity: 0; margin-left: -700px;}
+    to{opacity: 1; margin-left: 400px;}
+}
+
+
+/* Обо мне */
+
+
+#about{
+    width: 1920px;
+    height: 730px;
+}
+.about{
+    margin: 98px 594px 177px 594px;
+}
+.about h2{
+    font-size: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.about hr{
+   margin: 31px 329px 0 329px;
+    background-color: #c97a47;
+    width: 72px;
+    height: 4px;
+}
+.about img{
+    width: 199px;
+    height: 202px;
+    background-color: #eff0f4;
+    border-radius: 50%;
+    margin: 59px 266px 0 265px
+}
+.about .one{
+    font-size: 17px;
+    margin: 17px auto 0px;
+}
+.about .two{
+    font-size: 17px;
+    margin: 43px auto 0px;
+}
+.about input{
+    text-align: center;
+    color: #6F707E;
+    width: 159px;
+    height: 34px;
+    border: 1px solid #6F707E;
+    border-radius: 5%;
+    margin: 32px 281px 0;
+    background: url(../img/icon/download.png) no-repeat 5% 50%;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.about input:hover{
+    box-shadow: 4px 4px 4px;
+    
+}
+
+.about input:active{
+    transform: scale(1.1);
+    
+}
+
+/* Что я умею */
+
+
+#services{
+    width: 1920px;
+    height: 523px;
+    background: url(../img/bgservices.jpg) no-repeat center/cover;
+}
+#services h2{
+   font-size: 33px;
+    text-align: center;
+    text-transform: uppercase; 
+    padding-top: 94px;
+}
+#services hr{
+    margin: 31px 924px 0 924px;
+    background-color: #c97a47;
+    width: 72px;
+    height: 4px;
+}
+
+.services{
+  margin: 107px 415px 0 415px;  
+  width: 1088px;
+    height: 200px;
+    
+}
+ .chapter{
+    width: 210px;
+    float: left;
+    margin-left: 55px;
+    text-align: center
+}
+.chapter img{
+    margin: 0 0 28px 0;
+}
+.chapter span{
+    font-size: 18px;
+    color:#CF7600;
+}
+.chapter p{
+    font-size: 16px;
+    color:#6B7380;
+    margin-top: 6px;
+}
+
+
+/* Кейсы */
+
+#case{
+    width: 1920px;
+    height: 1084px;
+    
+}
+.case_head{
+    width: 1920px;
+    
+}
+.case_head h2{
+    margin-top: 99px;
+   font-size: 33px;
+    text-align: center;
+    text-transform: uppercase; 
+
+}
+
+.case_head hr{
+    margin: 31px 924px 0 924px;
+    background-color: #c97a47;
+    width: 72px;
+    height: 4px;
+}
+
+.case_head p{
+   font-size: 16px;
+    text-align: center;
+    margin: 30px auto 38px;
+}
+.case_bg{
+    width: 1553px;
+    height: 605px;
+    background: url(../img/site.png) no-repeat;
+    
+    
+}
+.case_footer{
+    margin: 10px 398px 0 388px;
+     
+
+}
+.clients {
+    float: left;
+    margin-right: 100px; 
+    
+}
+
+.clients span{
+    font-size: 25px;
+    color: #384354;
+}
+.clients p{
+    font-size: 16px;
+    color: #384354;
+}
+
+.project span{
+    font-size: 25px;
+    color: #384354;
+}
+
+.project p{
+    font-size: 16px;
+    color: #384354;
+}
+
+ #case input{
+    width: 200px;
+    height: 44px;
+    border-radius: 12%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #63B5AE;
+    margin-left: 390px;
+     margin-top: 21px;
+}
+
+
+
+/* Расчёт стоимости */
+
+
+#cost{
+    width: 1920px;
+    height: 919px;
+ 
+}
+.cost_main{
+    margin: 134px 505px 98px 459px;
+   
+}
+.cost_main h2{
+    font-size: 45px;
+    margin: 23px auto 54px;
+    text-align: center;
+}
+
+.calc h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 35px;
+}
+.calc select{
+    width: 831px;
+    height: 57px;
+    background-color: #efefef;
+    margin: 22px 30px 44px 35px;
+}
+.calc p{
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+
+/* Статистика */
+.stat{
+    width: 1920px;
+    height: 499px;
+    background: url(../img/statbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    }
+
+.stat h2{
+   font-size: 33px;
+    text-align: center;
+    text-transform: uppercase; 
+    padding-top: 94px;
+}
+ .stat hr{
+    margin: 31px 924px 0 923px;
+    background-color: #c97a47;
+    width: 72px;
+    height: 4px;
+}
+
+.points{
+    width: 250px;
+    float: left;
+    margin-left: 80px;
+}
+.stat_points{
+    position: relative;
+    top: 110px;
+    left: 256px;
+    text-align: center;
+    
+}
+.stat_points p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 16px ;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.stat_points span{
+    font-size: 37px;
+    font-weight: bold;
+    
+}
+
+/* Отзывы */
+
+
+.reviews{
+    width: 1920px;
+    height: 580px;
+}
+.reviews h2{
+    margin-top: 95px;
+    font-size: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.reviews hr{
+    width: 71px;
+    height: 5px;
+    background-color: #c97a47;
+    margin: 27px 925px 0 929px;
+}
+.reviews img{
+    margin: 57px 911px 0 915px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.reviews p{
+    text-align: center;
+    margin-top: 28px;
+    font-size: 16px;
+}
+.reviews span{
+    font-weight: bold;
+}
+.reviews .dotted img{
+    border: none;
+    border-radius: 0%;
+    margin: 26px 930px 0 930px;
+}
+
+
+/* Контакты */
+#contacts{
+    width: 1920px;
+    height: 808px;
+    background: url(../img/contactsbg.jpg) no-repeat;
+    border: 1px solid;
+}
+.contacts h2{
+    margin-top: 95px;
+    font-size: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.contacts hr{
+    width: 71px;
+    height: 5px;
+    background-color: #c97a47;
+    margin: 27px 925px 0 929px;
+}
+.contacts p {
+    margin-top: 26px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+.contacts .adres{
+    width: 720px;
+    height: 70px;
+    position: relative;
+    top: 50px;
+    left: 535px;
+}
+.adres div{
+    float: left;
+    margin-left: 90px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2em;
+    color: #fff;
+}
+
+/* Форма отправки сообщения */
+.messages h2{
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 80px;
+}
+ .name, .email{
+    width: 352px;
+    height: 34px;
+     font-size: 16px;
+     margin-top: 41px;
+     position: relative;
+     left: 600px;
+}
+.massage{
+    width: 708px;
+    height: 94px;
+     font-size: 16px;
+     margin-top: 1px;
+     position: relative;
+     left: 600px;
+}
+.messages button{
+    width: 125px;
+    height: 46px;
+    border: 1px solid #fff;
+    border-radius: 10%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(120,120,120,0);
+    margin: 28px 898px 0;
+    transition: 0.2s;
+}
+.messages button:hover{
+    color: #c97a47;
+    border-color: #c97a47;
+}
+.messages button:active{
+    transform: scale(1.1);
+}
+.socweb{
+    position: relative;
+    top: 95px;
+    left: 705px;
+} 
+.socweb li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+
+#map{
+    width: 1920px;
+    height: 356px;
+}
+footer{
+    width: 1920px;
+    height: 96px;
+    background-color: #2a3d50;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 14px;
+}
